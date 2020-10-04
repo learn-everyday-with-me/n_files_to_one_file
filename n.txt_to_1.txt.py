@@ -1,8 +1,8 @@
 import os
-path = r'C:\Users\kotni\Desktop\study\ECS'
+path = r'Enter your path here'
 final_string = os.path.join(path,"final.txt")
 final = open(final_string,"w")
-for _ in range(1,18):
+for _ in os.listdir(path):
     final.write(str(_) + ".txt : " + "\n\n")
     temp = os.path.join(path,str(_) + ".txt")
     file = open(temp,"r")
